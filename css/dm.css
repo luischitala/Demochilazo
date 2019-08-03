@@ -1,4 +1,5 @@
 /*Relleno para que el header no cubra el contenido*/
+
 body {
 	margin: 0;
 	padding: 0;
@@ -7,8 +8,27 @@ body {
 	background: #f2f2f2; 
 	font-size: 1em;
 	line-height: 1.5em;
-	
+
 	padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
+}
+
+.contenedorhome{
+	width: 1000px;
+	height: 400px;
+	padding-top: 50px;
+	margin: auto;
+	position:relative;
+	margin-bottom: 50px;
+}
+
+
+.contenedorhome1{
+	width: 1000px;
+	height: 400px;
+	padding-top: 50px;
+	margin: auto;
+	position:relative;
+	margin-bottom: 50px;
 }
 
 .main-header{
@@ -123,7 +143,23 @@ form.example::after {
 	top: 0; /* Posicionamos la cabecera pegada arriba */
 	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
 }
-
+.grande{
+	display:inline;
+}
+.mediana{
+	display: inline;
+}
+.left{
+	padding-right: 30px;
+	
+}
+.right{
+	padding-left: 30px;
+	transition: transform .5s ease;
+}
+.left:hover{
+	transform:scale(1.1);
+}
 
 /*Para estilizar el contenido genérico del body*/
 #main-content {
@@ -138,3 +174,4 @@ form.example::after {
 	#main-content .content {
 		padding: 40px;
 	}
+
