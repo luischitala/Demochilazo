@@ -1,4 +1,15 @@
-
+/*Relleno para que el header no cubra el contenido*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+	
+	padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
+}
 
 .main-header{
 	background: #5B85AA;
@@ -22,7 +33,7 @@
 	display: inline-block;
 	position: absolute;
 	right:210px;
-	top:0;
+	bottom: 60px;
 }
 
 
@@ -34,7 +45,7 @@
 .logo-header img {
 	float: left;
 	position:relative;
-	top:10px;
+	bottom:10px;
 	width: 80px;
 	height: 80px;
 }
@@ -44,7 +55,7 @@
 		font-weight: 700;
 		font-size: 1.2em;
 		position: relative;
-		top: 25px;
+		bottom:-10px;
 		left:10px;
 }
 
@@ -63,12 +74,13 @@
 	display: inline-block;
 	margin-left: 30px;
 }
-/* se situa el buscador a la derecha resolver posición negativa*/
+/* se situa el contenedor del buscador a la derecha resolver posición negativa*/
 .buscador{
 	position: relative;
 	left: 1000px;
-	top:-10px;
+	top:-28px;
 }
+/* se ingresa el campo de buscador y se le modifican las dimensiones*/
 form.buscador input[type=search] {
   padding: 10px;
   font-size: 17px;
@@ -78,7 +90,7 @@ form.buscador input[type=search] {
   height: 30px;
   background: #f1f1f1;
 }
-
+/*boton modificado en el paddin para que la lupa quede centrada*/
 form.buscador button {
   float: left;
   width: 40px;
@@ -91,12 +103,38 @@ form.buscador button {
   border-left: none; /* Prevent double borders */
   cursor: pointer;
 }
+/*efecto del boton*/
 form.example button:hover {
   background: #0b7dda;
 }
-
+/*Agregar comentario*/
 form.example::after {
   content: "";
   clear: both;
   display: table;
 }
+/*Primera parte para que el header se quede fijo*/
+.main-header {
+	background: #5B85AA;
+	color:white;
+	height: 100px;
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+
+
+/*Para estilizar el contenido genérico del body*/
+#main-content {
+	background: white;
+	width: 90%;
+	max-width: 800px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+ 
+	#main-content header,
+	#main-content .content {
+		padding: 40px;
+	}
