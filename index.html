@@ -5,23 +5,37 @@
 	<title>De Mochilazo</title>
 	<link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/dm.css" >
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<header id="main-header">
-	<a id="logo-header">
+<header class="main-header">
+	<a class="logo-header">
+		
 		<figure>
   	<img src="images/logo.png" alt="dm" width="50" height="50" class="logo">
 	</figure>
+		
 		<span class="site-name">De Mochilazo</span>
 		<span class="site-desc">Tu compañero de viaje</span>
+		
 	</a>
-	<nav id="menu">
-		<ul>
-			<li><a href="">Quienes somos</a></li>
-			<li><a href="">Tours</a></li>
-			<li><a href="">Tips</a></li>
+	<nav class="menu">
+		<ul class="listahead">
+			<li>
+				<span class="separador"></span><a href="">Quienes somos</a>
+			</li>
+			<li>
+				<span class="separador"></span><a href="">Tours</a>
+			</li>
+			<li>
+				<span class="separador"></span><a href="">Tips</a>
+			</li>
 		</ul>
 	</nav>
+<form class="buscador">
+	<input type="search" placeholder="Busca artículo" class="buscador1">
+	 <button type="submit"><i class="fa fa-search"></i></button>
+</form>
 </header>
 </body>
 </html>
