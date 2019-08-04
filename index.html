@@ -42,9 +42,8 @@
 </header>
 <section class="contenedorhome">
 	<article class="grande">
-		
+			
 		<img class="left" src="images/fushimi.jpg" width="450" height="300" alt="FushimiInari">
-		
 		
 		<img class="right" src="images/GG.jpg" width="450" height="300" alt="Goldengate">
 		
@@ -64,14 +63,44 @@
 <footer>
 	<section class="contenedorsm">
 		<article class="fsm">
-			<a href="#" class="fa fa-facebook"></a>
-			<a href="#" class="fa fa-twitter"></a>
-			<a href="#" class="fa fa-instagram"></a>
-			<a href="#" class="fa fa-youtube"></a>
+		
 		</article>
 	</section>
 	<section class="footer">
+			<form class="Formulario">
+			<div class="col1">
+			<label for="nombre">Nombre</label>
+			<input type="text" required placeholder="Ingresa tu correo aquí" id="nombre" name="nombre"/>
+			<label for="email">E-Mail</label>
+			<input type="email" required id="email" name="email" />
+			<div class="sexo">
+				<label for="mujer">
+					<input type="radio" id="mujer" name="sexo" value="mujer">Mujer
+			</label>
+				<label for="hombre">
+					<input type="radio" id="hombre" name="sexo" value="hombre">Hombre
+			</label>
+			</div>
+			<div class="intereses">
+				<label for="cotizacion">
+					<input type="checkbox" checked="" id="cotizacion" name="intereses" value="cotizacion">Cotización
+				<label for="reclamos">
+					<input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
+
+				<label for="comentarios">
+					<input type="checkbox" id="comentarios" name="intereses" value="comentarios">Comentarios
+				<label for="otros">
+					<input type="checkbox" id="otros" name="intereses" value="otros">Otros
 		
+				</label>
+			</div>
+			</div>
+			<div class="col2">
+				<label for="comentarios">Comentarios</label>
+				<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+				<input type="submit" value="Enviar" id="button">
+			</div>
+			</form>
 	</section>
 </footer>
 </html>

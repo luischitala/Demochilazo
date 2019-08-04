@@ -151,6 +151,7 @@ form.example::after {
 .grande{
 	display:inline;
 }
+
 .mediana{
 	display: inline;
 	height: 600px;
@@ -160,32 +161,51 @@ form.example::after {
 }
 .left{
 	padding-right: 30px;
-	
+	transition: transform .2s ease;
 }
+
 .right{
+	
 	padding-left: 30px;
-	transition: transform .5s ease;
+	transition: transform .2s ease;
 }
 .left:hover{
 	transform:scale(1.1);
+	height: 300px;
+	width: 450px;
+	}
+.right:hover{
+	transform:scale(1.1);
+
 	}
 .med1{
 	padding-top: 50px;
 	padding-right: 50px;
 	padding-bottom: 20px;
+	transition: transform .2s ease;
 }
 .med2{
 	padding-top: 50px;
 	padding-right: 40px;
 	padding-left:60px;
 	padding-bottom: 20px;
+	transition: transform .2s ease;
 }
 .med3{
 	padding-top: 50px;
 padding-right: 30px;
 padding-left: 60px;
 padding-bottom: 20px;
-
+transition: transform .2s ease;
+}
+.med1:hover{
+	transform:scale(1.1);
+}
+.med2:hover{
+	transform:scale(1.1);
+}
+.med3:hover{
+	transform:scale(1.1);
 }
 
 /*Para estilizar el contenido genérico del body*/
@@ -222,25 +242,56 @@ padding-bottom: 20px;
 	margin-top: 50px;
 }
 
- 
+ /*Formulario de Leder*/
 
-.fa:hover {
-  opacity: 0.7;
-}
+.Formulario{
+	display: flex;
+	width: 400px;
+	color: white;
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
 }
 
-.fa-twitter{
-	 background: #55ACEE;
-  color: white;
+.col1,.col2{
+display: flex;
+flex-direction: column;
 }
-.fa-instagram {
-  background: #125688;
-  color: white;
+.col1{
+	margin-top: 10px;
+	margin-left: 700px;
+	margin-right: 50px;
 }
+.col2 {
+	align-items: flex-start;
+	margin-top: 10px;
+
+}
+.col2.button{
+	border-radius: 8px;
+	border:none;
+	background:;
+	cursor: pointer;
+	margin-left: 70px;
+	font-size: 20px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+ 	 transition-duration: 0.4s;
+}
+}
+.intereses label{
+	font-size: 12px;
+}
+.Formulario label, .sexo, .intereses {
+	margin-bottom: 10px;
+}
+input,textarea{
+	outline: 0;
+}
+input:focu, textarea:focus{
+	background:lightgray;
+}
+.sexo{
+	margin-top: 10px;
+}
+/*formulario de leder*/
 
 
 
