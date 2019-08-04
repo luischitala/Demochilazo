@@ -1,14 +1,15 @@
 /*Relleno para que el header no cubra el contenido*/
 
 body {
+	
 	margin: 0;
 	padding: 0;
+	background:red;
 	font-family: "Montserrat", sans-serif;
 	color: #666;
 	background: #f2f2f2; 
 	font-size: 1em;
 	line-height: 1.5em;
-
 	padding-top: 100px; /* Relleno superior igual a la altura de la cabecera*/
 }
 
@@ -19,7 +20,8 @@ body {
 	height: 2000px;
 	margin: auto;
 	position: relative;
-	z-index: 1;
+	z-index: 0;
+	
 }
 
 .containerg1{
@@ -193,7 +195,7 @@ body {
 	
 }
 .main-header{
-	background: #5B85AA;
+	background: #0EB1D2;
 	color:white;
 	height: 100px;
 }
