@@ -9,29 +9,189 @@ body {
 	font-size: 1em;
 	line-height: 1.5em;
 
-	padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
+	padding-top: 100px; /* Relleno superior igual a la altura de la cabecera*/
 }
 
-.contenedorhome{
+.containerhome{
+
+	padding-top: 30px;
 	width: 1000px;
-	height: 400px;
-	padding-top: 50px;
+	height: 2000px;
 	margin: auto;
-	position:relative;
-	margin-bottom: 50px;
+	position: relative;
+	z-index: 1;
 }
 
+.containerg1{
+  position: relative; 
+  left: 0;
+  width:450px;
+  height: 300px;
+  display: inline-block;
+  padding-right: 45px;
+  
+}
 
-.contenedorhome1{
-	width: 1000px;
-	height: 600px;
-	padding-top: 50px;
-	margin: auto;
-	position:relative;
-	margin-bottom: 100px;
+.containerg1 .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+ font-size: 10px;
+  width: 450px; /* Full width */
+  height: 100px;
+
+}
+.containerg1 .content h1{
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.containerg1 .content p{
+	padding-left: 20px;
+	position: relative;
+	bottom: 10px;
+}
+.containerg2{
+  position: relative; 
+  right: 0;
+  width:450px;
+  height: 300px;
+  display: inline-block;
+  padding-left: 45px;
+  
+}
+
+.containerg2 .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+ font-size: 10px;
+  width: 450px; /* Full width */
+  height: 100px;
+ bottom: 5;
+ right: 0;
+}
+.containerg2 .content h1{
+	padding-top: 20px;
+	padding-left: 20px;
+
+}
+.containerg2 .content p{
+	padding-left: 20px;
+	position: relative;
+	right: 0;
+	bottom: 10px;
+}
+
+.containerm1{
+  position: relative; 
+  top: -1650px;
+  left: 175px;
+  width:300px;
+  height: 250px;
+  display: inline;
+  padding-right: 45px;
+  
+}
+
+.containerm1 .content {
+  position: absolute; /* Position the background text */
+  bottom: 5px; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 300px; /* Full width */
+  height: 60px;
+
+}
+.containerm1 .content h1{
+	padding-top: 20px;
+	padding-left: 20px;
+	font-size: 15px;
+	position: relative;
+	bottom: 20px;
+}
+.containerm1 .content p{
+	padding-left: 20px;
+	font-size: 10px;
+	position: relative;
+	bottom: 35px;
+	
+}
+.containerm2{
+  position: relative; 
+  top: -1650px;
+  left: 180px;
+  width:300px;
+  height: 250px;
+  display: inline;
+  padding-right: 45px;
+  
+}
+.containerm2 .content {
+  position: absolute; /* Position the background text */
+  left: 0;
+  bottom: 5px; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 300px; /* Full width */
+  height: 60px;
+
+}
+.containerm2 .content h1{
+	padding-top: 20px;
+	padding-left: 20px;
+	font-size: 15px;
+	position: relative;
+	bottom: 20px;
+}
+.containerm2 .content p{
+	padding-left: 20px;
+	font-size: 10px;
+	position: relative;
+	bottom: 35px;
 	
 }
 
+.containerm3{
+  position: relative; 
+  top: -1650px;
+  right: -175px;
+  width:300px;
+  height: 250px;
+  display: inline;
+  padding-right: 45px;
+  
+}
+.containerm3 .content {
+  position: absolute; /* Position the background text */
+  left: 0;
+  bottom: 5px; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 300px; /* Full width */
+  height: 60px;
+
+}
+.containerm3 .content h1{
+	padding-top: 20px;
+	padding-left: 20px;
+	font-size: 15px;
+	position: relative;
+	bottom: 20px;
+}
+.containerm3 .content p{
+	padding-left: 20px;
+	font-size: 10px;
+	position: relative;
+	bottom: 35px;
+	
+}
 .main-header{
 	background: #5B85AA;
 	color:white;
@@ -147,65 +307,7 @@ form.example::after {
 	left: 0; /* Posicionamos la cabecera al lado izquierdo */
 	top: 0; /* Posicionamos la cabecera pegada arriba */
 	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
-}
-.grande{
-	display:inline;
-}
-
-.mediana{
-	display: inline;
-	height: 600px;
-	margin-bottom: 50px;
-	padding-top: 50px;
-	
-}
-.left{
-	padding-right: 30px;
-	transition: transform .2s ease;
-}
-
-.right{
-	
-	padding-left: 30px;
-	transition: transform .2s ease;
-}
-.left:hover{
-	transform:scale(1.1);
-	height: 300px;
-	width: 450px;
-	}
-.right:hover{
-	transform:scale(1.1);
-
-	}
-.med1{
-	padding-top: 50px;
-	padding-right: 50px;
-	padding-bottom: 20px;
-	transition: transform .2s ease;
-}
-.med2{
-	padding-top: 50px;
-	padding-right: 40px;
-	padding-left:60px;
-	padding-bottom: 20px;
-	transition: transform .2s ease;
-}
-.med3{
-	padding-top: 50px;
-padding-right: 30px;
-padding-left: 60px;
-padding-bottom: 20px;
-transition: transform .2s ease;
-}
-.med1:hover{
-	transform:scale(1.1);
-}
-.med2:hover{
-	transform:scale(1.1);
-}
-.med3:hover{
-	transform:scale(1.1);
+	z-index: 100;
 }
 
 /*Para estilizar el contenido genérico del body*/
